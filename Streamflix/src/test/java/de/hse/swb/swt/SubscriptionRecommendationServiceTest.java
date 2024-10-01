@@ -20,12 +20,12 @@ public class SubscriptionRecommendationServiceTest {
     
     @Test
     void testBasicSubscripton(){
-        assertEquals("B",SubscriptionRecommendationService.recommendModel(true, 2, true, 1));
+        assertEquals("B",SubscriptionRecommendationService.recommendModel(true, 2, false, 1));
     }
 
     @Test
     void testStandardSubscription(){
-        assertEquals("S", SubscriptionRecommendationService.recommendModel(true, 2, true, 2));
+        assertEquals("S", SubscriptionRecommendationService.recommendModel(true, 2, false, 2));
     }
 
     @Test
