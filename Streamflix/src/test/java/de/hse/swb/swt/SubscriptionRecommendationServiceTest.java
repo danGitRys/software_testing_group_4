@@ -19,7 +19,7 @@ public class SubscriptionRecommendationServiceTest {
 
     
     @Test
-    void testBasicSubscripton(){
+    void testBasicSubscription(){
         assertEquals("B",SubscriptionRecommendationService.recommendModel(true, 2, false, 1));
     }
 
