@@ -47,4 +47,6 @@ public class SubscriptionRecommendationService {
         // Standard-Abo with ads (W)
         return "W"; // Standard Abo with Ads
     }
+
+
 }

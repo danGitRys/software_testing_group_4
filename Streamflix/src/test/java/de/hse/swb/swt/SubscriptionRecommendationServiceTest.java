@@ -33,4 +33,15 @@ public class SubscriptionRecommendationServiceTest {
         assertEquals("P",SubscriptionRecommendationService.recommendModel(true, 4, true, 6));
     }
 
+
+
+    /**
+     * Possible Error when requiring UltraHd but the rest of the requirements is for a lower subscription, it recommends
+     * the subscription from the lower tier
+     */
+
+    @Test
+    void testPremiumSubscriptionWrongResult(){
+        assertEquals("P", SubscriptionRecommendationService.recommendModel(true, 2, true, 2));
+    }
 }
