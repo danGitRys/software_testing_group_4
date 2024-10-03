@@ -14,7 +14,7 @@ public class SubscriptionRecommendationServiceTest {
 
     @Test
     void  testStandardSubscriptionWithAds(){
-        assertEquals("W",SubscriptionRecommendationService.recommendModel(false, 0, false, 0));
+        assertEquals("W",SubscriptionRecommendationService.recommendModel(false, 2, false, 0));
     }
 
     
@@ -33,15 +33,13 @@ public class SubscriptionRecommendationServiceTest {
         assertEquals("P",SubscriptionRecommendationService.recommendModel(true, 4, true, 6));
     }
 
-
-
     /**
      * Possible Error when requiring UltraHd but the rest of the requirements is for a lower subscription, it recommends
      * the subscription from the lower tier
      */
 
     @Test
-    void testPremiumSubscriptionWrongResult(){
+    void testNeedUpgradeToPremium(){
         assertEquals("P", SubscriptionRecommendationService.recommendModel(true, 2, true, 2));
     }
 }
