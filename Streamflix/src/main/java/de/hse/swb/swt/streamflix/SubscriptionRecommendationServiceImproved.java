@@ -15,7 +15,7 @@ package de.hse.swb.swt.streamflix;
 /**
  * This class represents a recommendation service for StreamFlix subscriptions.
  */
-public class SubscriptionRecommendationService {
+public class SubscriptionRecommendationServiceImproved {
 
     /**
      * Recommends the most cost-effective Abo model based on the user's preferences.
@@ -30,7 +30,7 @@ public class SubscriptionRecommendationService {
      */
     public static String recommendModel(boolean requiresNoAds, int devicesToWatch, boolean requiresUltraHD, int devicesToDownload) {
         // Premium model (P)
-        if (requiresNoAds && requiresUltraHD && devicesToWatch > 2 && devicesToDownload > 2) {
+        if (requiresNoAds && devicesToWatch > 2 && devicesToDownload > 2 || requiresUltraHD) {
             return "P"; // Premium
         }
         
