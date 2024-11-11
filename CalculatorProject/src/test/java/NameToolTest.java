@@ -1,5 +1,4 @@
 import static org.junit.jupiter.api.Assertions.*;
-
 import de.hse.swb.swt.nametool.NameTool;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;

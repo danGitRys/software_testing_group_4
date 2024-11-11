@@ -32,6 +32,6 @@ public class Hotelbooking {
         price = price*0.9;
     }
 
-    return price;
+    return price*nights;
 }
 }
