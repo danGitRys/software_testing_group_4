@@ -1,4 +1,4 @@
-package com;
+package com.hse;
 
 public class InvalidBookingException extends Exception {
 
