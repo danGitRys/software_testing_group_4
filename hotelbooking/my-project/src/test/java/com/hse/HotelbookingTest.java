@@ -17,10 +17,10 @@ public class HotelbookingTest {
     @Test
     public void testRoomTypesValid() {
 
-        RoomType testRoom1 = RoomType.S;//test for single room
-        RoomType testRoom2 = RoomType.D;//test for double room
-        int testRoom3 = 0;//check if room type is int
-        String testRoom4 = "T";//check if room type is char
+        RoomType testRoom1 = RoomType.S;// test for single room
+        RoomType testRoom2 = RoomType.D;// test for double room
+        int testRoom3 = 0;// check if room type is int
+        String testRoom4 = "T";// check if room type is char
 
         // Check for exception when room type is S
         assertDoesNotThrow(() -> Hotelbooking.calculateRoomPrice(4, testRoom1));
@@ -49,16 +49,16 @@ public class HotelbookingTest {
         RoomType testRoom1 = RoomType.S;
         RoomType testRoom2 = RoomType.D;
 
-        assertEquals(Hotelbooking.calculateRoomPrice(3, testRoom1), 60 * 1 * 3);//single room for 3 nights
-        assertEquals(Hotelbooking.calculateRoomPrice(3, testRoom2), 70 * 1 * 3);//double room for 3 nights
-        assertEquals(Hotelbooking.calculateRoomPrice(6, testRoom1), 60 * 1 * 6);//single room for 6 nights
-        assertEquals(Hotelbooking.calculateRoomPrice(6, testRoom2), 70 * 1 * 6);//double room for 6 nights
-        assertEquals(Hotelbooking.calculateRoomPrice(7, testRoom1), 60 * 0.9 * 7);//single room for 7 nights
-        assertEquals(Hotelbooking.calculateRoomPrice(7, testRoom2), 70 * 0.9 * 7);//double room for 7 nights
-        assertEquals(Hotelbooking.calculateRoomPrice(13, testRoom1), 60 * 0.9 * 13);//single room for 13 nights
-        assertEquals(Hotelbooking.calculateRoomPrice(13, testRoom2), 70 * 0.9 * 13);//double room for 13 nights
-        assertEquals(Hotelbooking.calculateRoomPrice(14, testRoom1), 60 * 0.8 * 14);//single room for 14 nights
-        assertEquals(Hotelbooking.calculateRoomPrice(14, testRoom2), 70 * 0.8 * 14);//double room for 14 nights
+        assertEquals(Hotelbooking.calculateRoomPrice(3, testRoom1), 60 * 1 * 3);// single room for 3 nights
+        assertEquals(Hotelbooking.calculateRoomPrice(3, testRoom2), 70 * 1 * 3);// double room for 3 nights
+        assertEquals(Hotelbooking.calculateRoomPrice(6, testRoom1), 60 * 1 * 6);// single room for 6 nights
+        assertEquals(Hotelbooking.calculateRoomPrice(6, testRoom2), 70 * 1 * 6);// double room for 6 nights
+        assertEquals(Hotelbooking.calculateRoomPrice(7, testRoom1), 60 * 0.9 * 7);// single room for 7 nights
+        assertEquals(Hotelbooking.calculateRoomPrice(7, testRoom2), 70 * 0.9 * 7);// double room for 7 nights
+        assertEquals(Hotelbooking.calculateRoomPrice(13, testRoom1), 60 * 0.9 * 13);// single room for 13 nights
+        assertEquals(Hotelbooking.calculateRoomPrice(13, testRoom2), 70 * 0.9 * 13);// double room for 13 nights
+        assertEquals(Hotelbooking.calculateRoomPrice(14, testRoom1), 60 * 0.8 * 14);// single room for 14 nights
+        assertEquals(Hotelbooking.calculateRoomPrice(14, testRoom2), 70 * 0.8 * 14);// double room for 14 nights
     }
 
     @Test
